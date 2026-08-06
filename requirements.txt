@@ -1,0 +1,10 @@
+PySide6>=6.5.0
+python-docx>=1.1.0
+
+# Optional — only needed for PDF export (Generate Resume (.pdf)):
+#   - Windows or macOS: install docx2pdf (drives Microsoft Word / macOS's
+#     built-in converter). On Windows, comtypes is also used automatically.
+#   - Any platform (Windows/macOS/Linux): install LibreOffice as a fallback
+#     if you don't have Word — https://www.libreoffice.org/download
+docx2pdf>=0.1.8; sys_platform == "win32" or sys_platform == "darwin"
+comtypes>=1.2.0; sys_platform == "win32"
